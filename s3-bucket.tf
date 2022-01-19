@@ -5,7 +5,7 @@ module "s3_bucket" {
   #bucket_prefix = "nishanth"
   #bucket = "${bucket_prefix}-my-s3-bucket"
   #comment
-  bucket = "my-s3-bucket"
+  bucket = "my-s3-bucket8389884899304"
   acl    = "private"
 
   versioning = {
