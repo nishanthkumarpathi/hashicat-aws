@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "=3.42.0"
+      version = "=3.72.0"
     }
   }
 }
@@ -127,7 +127,9 @@ resource "aws_instance" "hashicat" {
   vpc_security_group_ids      = [aws_security_group.hashicat.id]
 
   tags = {
-    Name = "${var.prefix}-hashicat-instance"
+    Name = "${var.prefix}-hashicat-instance",
+    Department = "devops",
+    Billable = "true"
   }
 }
 
